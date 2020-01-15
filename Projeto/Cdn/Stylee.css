@@ -339,6 +339,7 @@
 
 .main_school_content{
     max-width: 1300px;
+    padding: 0 20px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -535,7 +536,7 @@
 
 .main_optin_footer_content{
     max-width: 1300px;
-    padding: 40px 0;
+    padding: 40px 20px;
     text-align: center;
     color: #333;
 }
@@ -557,7 +558,7 @@
 
 .main_footer{
     max-width: 1300px;
-    padding: 40px 0;
+    padding: 40px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -712,6 +713,20 @@
      .main_optin_content form input[type=text], .main_optin_content form input[type=email]{
          padding: 6px 12px;
      }
+
+     .main_school_content_left{
+         flex-basis: 100%;
+     }
+
+     .main_school_content_rigth{
+         flex-basis: 200px;
+         max-width: 200px;
+         padding: 20px;
+     }
+     .main_school_address{
+         flex-basis: calc(100% - 200px);
+         margin: auto;
+     }
 }
 
 
@@ -744,6 +759,34 @@
 
     .main_course_rating_content_title h2{
         font-size: 2em; 
+    }
+    .main_school_list > article {
+        flex-basis: 100%;
+        margin: 10px 0;
+        font-size: 0.9em;
+        line-height: 2em;
+    }
+
+    .main_tutor_social{
+        max-width: 80%;
+    }
+
+    .main_tutor_social > article {
+        flex-basis: 49%;
+        margin-bottom: 20px;
+    }
+
+    .main_tutor_social h2{
+        margin-bottom: 20px;
+    }
+
+    .main_footer_our_pages, .main_footer_links{
+        flex-basis: calc(50% - 10px);
+    }
+
+    .main_footer_about{
+        flex-basis: 100%;
+        margin-top: 20px;
     }
 
 
@@ -780,6 +823,28 @@
        flex-basis: 100%; 
     }
 
+}
+
+/* 580px */
+
+@media (max-width:36em){
+    .main_tutor_social > article {
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+/* 520px */
+@media (max-width:32em){
+    .main_school_content_rigth{
+        display: none;
+    }
+
+    .main_school_address{
+        flex-basis: 100%;
+    }
 }
 
 
